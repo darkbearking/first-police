@@ -1,0 +1,10 @@
+##server:
+#  port: 8081
+spring:
+  application:
+    name: first-police
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/, http://localhost:8762/eureka/, http://localhost:8763/eureka/
+      ###上一行如果要註冊到多個eureka服務器的話，可以用逗號分隔。同時這裡也是為了測試一下，看#是否有注釋的功能
